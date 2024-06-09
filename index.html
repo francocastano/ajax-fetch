@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Facts</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card bg-primary text-white mt-5 p-4">
+                    <h1>Number Facts </h1>
+                    <p>Enter a number and get a random fact</p>
+                    <input type="text" class="form-control-form-control-lg" id="numberInput"
+                        placeholder="Enter any number...">
+                    <div class="card-body" id="fact">
+                        <h4 class="card-title">
+                            Number Fact
+                        </h4>
+                        <p class="card-text" id="factTextAjax"></p>
+                    </div>
+
+                    <div class="card-body" id="fact">
+                        <h4 class="card-title">
+                            Number Fact
+                        </h4>
+                        <p class="card-text" id="factTextFetchAsync"></p>
+                    </div>
+
+                    <div class="card-body" id="fact">
+                        <h4 class="card-title">
+                            Number Fact
+                        </h4>
+                        <p class="card-text" id="factTextFetchPromise"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
